@@ -1,7 +1,7 @@
 package service.impl;
 
-import entity.Book;
-import entity.ResponseMessage;
+import model.entity.Book;
+import model.ResponseMessage;
 import service.BookService;
 
 public class BookServiceImpl implements BookService {

@@ -1,7 +1,7 @@
 package service;
 
-import entity.Book;
-import entity.ResponseMessage;
+import model.entity.Book;
+import model.ResponseMessage;
 
 public interface BookService {
     public ResponseMessage addBook(Book book);

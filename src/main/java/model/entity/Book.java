@@ -1,4 +1,4 @@
-package entity;
+package model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,12 +10,15 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "reader")
+@Table(name = "book")
 
-public class Reader {
+public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
-    String name;
-    String phone;
+    Long id;
+    String title;
+    String author;
+    int quantity;
 }
+
+
